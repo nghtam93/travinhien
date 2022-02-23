@@ -23,6 +23,9 @@
       right: 4px;
       top: 4px;
       min-width: 0;
+      @media only screen and (max-width: 575px) {
+        padding: 8px 26px;
+      }
     }
     .form-control {
       padding-right: 92px;

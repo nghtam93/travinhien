@@ -239,17 +239,17 @@ $(document).ready(function () {
     $("body").removeClass("modal-open");
   });
 
-  $(window).on("load resize", function () {
-    var currentPath = window.location.hash;
-    $('a[href^="#"]').each(function () {
-      var attrHref = $(this).attr("href");
-      if (attrHref === currentPath) {
-        $(this).parent().addClass("active");
-      } else {
-        $(this).parent().removeClass("active");
-      }
-    });
-  });
+  // $(window).on("load resize", function () {
+  //   var currentPath = window.location.hash;
+  //   $('a[href^="#"]').each(function () {
+  //     var attrHref = $(this).attr("href");
+  //     if (attrHref === currentPath) {
+  //       $(this).parent().addClass("active");
+  //     } else {
+  //       $(this).parent().removeClass("active");
+  //     }
+  //   });
+  // });
 });
 
 function matchHeight($o, m) {
@@ -274,84 +274,4 @@ $(function () {
   $(window).on("load resize", function () {
     matchHeight($match, 4);
   });
-
-  if ($("#progress-chart").length) {
-    // Set up pie chart and add data.
-    var config = {
-      type: "pie",
-      options: {
-        legend: {
-          display: false,
-        },
-        cutoutPercentage: 0.1,
-        animation: {
-          animateScale: true,
-        },
-      },
-      data: {
-        labels: "",
-        machineLabels: "",
-        datasets: [
-          {
-            borderWidth: 0,
-            backgroundColor: [
-              "#F1E20C",
-              "#FFA630",
-              "#F3511D",
-              "#E31341",
-              "#8C2039",
-              "#6341BD",
-              "#284397",
-              "#0A88C9",
-              "#34A538",
-              "#95C61D",
-            ],
-            data: [2, 7, 5, 1.5, 38, 15, 6, 4, 10, 3],
-          },
-        ],
-      },
-    };
-
-    // Instantiate the pie chart in the canvas element.
-    var myPie = new Chart(document.getElementById("progress-chart"), config);
-
-    // Register click event to log the clicked label (machine name).
-    document.getElementById("progress-chart").onclick = function (evt) {
-      var activePoints = myPie.getElementAtEvent(evt);
-      var firstPoint = activePoints[0];
-      if (firstPoint !== undefined) {
-        var clickedItem = config.data.machineLabels[firstPoint._index];
-        console.log(clickedItem);
-      }
-    };
-  }
 });
-if ($(".-date__slider").length) {
-  const slider = document.querySelector(".-date__slider");
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener("mousedown", (e) => {
-    isDown = true;
-    slider.classList.add("active");
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-  slider.addEventListener("mouseleave", () => {
-    isDown = false;
-    slider.classList.remove("active");
-  });
-  slider.addEventListener("mouseup", () => {
-    isDown = false;
-    slider.classList.remove("active");
-  });
-  slider.addEventListener("mousemove", (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(walk);
-  });
-}
