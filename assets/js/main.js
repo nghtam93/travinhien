@@ -3,15 +3,14 @@ $(window).on("load", function () {
   $(".loading-page__logo").fadeOut();
   $(".loading-page").delay(350).fadeOut("slow");
   $("body").removeClass("modal-open");
-});
-
-$(document).ready(function () {
   if ($("body").is(".home")) {
     setTimeout(function () {
       new WOW().init();
-    }, 400);
+    }, 500);
   }
+});
 
+$(document).ready(function () {
   /*----Get Header Stick ---*/
   var header_sticky = $("header.-fix");
   $(window).scroll(function () {
