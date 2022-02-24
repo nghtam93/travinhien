@@ -7,20 +7,46 @@
     color: #ccd9bd;
     padding-top: 240px;
     z-index: 2;
+    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+      padding-top: 200px;
+    }
+    @media only screen and (max-width: 991px) and (min-width: 576px) {
+      padding-top: 180px;
+    }
+    @media only screen and (max-width: 767px) {
+      background-image: url("../img/home-banner-sp.png");
+    }
+    @media only screen and (max-width: 575px) {
+      padding-top: 150px;
+      font-size: 15px;
+      line-height: 1.67;
+    }
     .-title {
       color: #68e0cf;
       font-size: 32px;
       line-height: 1.37;
       margin-bottom: 16px;
+      @media only screen and (max-width: 575px) {
+        font-size: 24px;
+        line-height: 1.42;
+        margin-bottom: 8px;
+      }
     }
     .btn {
       margin-top: 40px;
+      @media only screen and (max-width: 575px) {
+        margin-top: 24px;
+      }
     }
     .el {
       &__content {
-        padding-left: 6%;
+        padding: 0 6%;
         position: relative;
         z-index: 2;
+        @media only screen and (max-width: 575px) {
+          padding: 0 20px;
+          font-size: 300;
+        }
         .-info {
           max-width: 526px;
         }
@@ -29,6 +55,26 @@
         position: relative;
         margin-top: 223px;
         max-width: 431px;
+        @media only screen and (max-width: 1199px) and (min-width: 992px) {
+          max-width: 380px;
+          margin-left: 10%;
+          margin-top: 200px;
+        }
+        @media only screen and (max-width: 991px) and (min-width: 768px) {
+          max-width: 360px;
+          margin-left: 10%;
+          margin-top: 180px;
+        }
+        @media only screen and (max-width: 767px) and (min-width: 576px) {
+          max-width: 320px;
+          margin-left: 10%;
+          margin-top: 180px;
+        }
+        @media only screen and (max-width: 575px) {
+          margin-top: 103px;
+          max-width: 125px;
+          margin-left: 10%;
+        }
         img {
           &:not(.img-main) {
             position: absolute;
@@ -36,10 +82,12 @@
         }
         .img {
           &-left {
+            width: 85%;
             bottom: -7.2%;
             right: 50%;
           }
           &-right {
+            width: 36%;
             bottom: -1.6%;
             left: 77.5%;
           }
@@ -52,6 +100,18 @@
           bottom: 72%;
           right: 0%;
           z-index: 1;
+          @media only screen and (max-width: 991px) and (min-width: 768px) {
+            height: 643px;
+          }
+          @media only screen and (max-width: 767px) and (min-width: 576px) {
+            height: 572px;
+          }
+          @media only screen and (max-width: 575px) {
+            height: 384px;
+            width: 180%;
+            bottom: 75%;
+            right: -42%;
+          }
         }
       }
     }
@@ -75,10 +135,14 @@
           32.6%;
       padding: 184px 0 150px;
     }
+    @media only screen and (max-width: 767px) and (min-width: 576px) {
+      margin-top: -130px;
+    }
     @media only screen and (max-width: 575px) {
       padding: 104px 0 87px;
       font-size: 15px;
       line-height: 1.67;
+      margin-top: -60px;
     }
     p {
       &:not(:last-child) {
@@ -88,10 +152,10 @@
     &__title {
       color: #113934;
       font-size: 56px;
-      font-weight: 700;
+      // font-weight: 700;
       line-height: 0.79;
       margin-bottom: 40px;
-      @media only screen and (max-width: 991px) and (min-width: 768px) {
+      @media only screen and (max-width: 991px) and (min-width: 576px) {
         font-size: 40px;
       }
       @media only screen and (max-width: 767px) {
@@ -256,7 +320,6 @@
         }
         &__title {
           font-size: 32px;
-          font-weight: 700;
           line-height: 1.31;
           margin-bottom: 8px;
           @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -377,7 +440,7 @@
           }
         }
         &__content {
-          width: 44.7%;
+          width: 45.7%;
           @media only screen and (max-width: 1199px) and (min-width: 768px) {
             width: 48.8%;
           }
@@ -477,7 +540,6 @@
             padding: 8px 12px;
           }
           .-title {
-            font-weight: 700;
             margin-bottom: 2px;
             letter-spacing: 0.02em;
             text-transform: uppercase;
@@ -501,7 +563,7 @@
             position: relative;
             color: #22a19c;
             font-size: 16px;
-            font-weight: 700;
+            font-family: "latomedium", sans-serif;
             line-height: 1.5;
             padding-left: 17px;
             @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -690,11 +752,16 @@
       margin-bottom: 8px;
     }
     &__content {
+      color: #113934;
       max-width: 622px;
       margin: 0 auto;
       p {
         &:not(:last-child) {
           margin-bottom: 30px;
+        }
+        strong {
+          font-family: "latomedium", sans-serif;
+          font-weight: 500;
         }
       }
     }

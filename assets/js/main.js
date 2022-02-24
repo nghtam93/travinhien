@@ -4,71 +4,10 @@ $(document).ready(function () {
   $(".loading-page").delay(350).fadeOut("slow");
   $("body").removeClass("modal-open");
 
-  if ($("body").is(".home, .voting-page, .about-page")) {
+  if ($("body").is(".home")) {
     setTimeout(function () {
       new WOW().init();
     }, 400);
-  }
-
-  if ($("body").hasClass("home")) {
-    $(".home-work .el__slider").slick({
-      arrows: true,
-      dots: false,
-      infinite: false,
-      slidesToScroll: 1,
-      slidesToShow: 2.5,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            arrows: false,
-            autoplay: true,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1.5,
-            arrows: false,
-            autoplay: true,
-          },
-        },
-      ],
-    });
-
-    $(".slider-nav").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      vertical: true,
-      asNavFor: ".slider-for",
-      focusOnSelect: true,
-      infinite: false,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            vertical: false,
-            centerMode: true,
-            centerPadding: "10%",
-            arrows: false,
-          },
-        },
-      ],
-    });
-
-    $(".slider-for").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      fade: true,
-      cssEase: "linear",
-      adaptiveHeight: true,
-      asNavFor: ".slider-nav",
-    });
   }
 
   /*----Get Header Stick ---*/
@@ -80,21 +19,9 @@ $(document).ready(function () {
   });
 
   $(window).on("load", function () {
-    // header_sticky.offset().top > 5
-    //   ? header_sticky.addClass("is-active")
-    //   : header_sticky.removeClass("is-active");
-  });
-
-  /*----Languages---*/
-  $(".languages__label").click(function () {
-    $(this).closest(".languages").toggleClass("is-active");
-    $(this).next().toggleClass("dropdown-languages");
-  });
-  $(".languages").mousedown(function (e) {
-    e.stopPropagation();
-  });
-  $(document).mousedown(function (e) {
-    $(".languages__content").removeClass("dropdown-languages");
+    header_sticky.offset().top > 5
+      ? header_sticky.addClass("is-active")
+      : header_sticky.removeClass("is-active");
   });
 
   /*----Get Header Height ---*/
@@ -139,46 +66,18 @@ $(document).ready(function () {
     }
   });
 
-  // check checkbox checked enable button
-  function checkDisableButton() {
-    $(".js-attr-disable").each(function () {
-      let checkBox = $(this).find(".js-attr-checkbox");
-      let btn = $(this).find(".js-attr-button");
-      checkBox.on("click", function () {
-        if ($(this).is(":checked")) {
-          $(btn).removeAttr("disabled").removeClass("-disabled");
-        } else {
-          $(btn).attr("disabled", "disabled").addClass("-disabled");
-        }
-      });
-    });
-  }
-  checkDisableButton();
+  // back top top
+  $(".back-to-top").click(function (e) {
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+  });
 
-  // js custom dropdown
-  $(".js-dropdown .js-dropdown-selected").click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass("is-show");
-    $(this)
-      .parents(".js-dropdown")
-      .find(".js-dropdown-list")
-      .toggleClass("is-show");
-  });
-  $(".js-dropdown .js-dropdown-list li a").click(function (e) {
-    e.preventDefault();
-    var text = $(this).html();
-    $(this)
-      .parents(".js-dropdown")
-      .find(".js-dropdown-selected a span")
-      .html(text);
-    $(this).parents(".js-dropdown-list").removeClass("is-show");
-  });
-  $(document).bind("click", function (e) {
-    var $clicked = $(e.target);
-    if (!$clicked.parents().hasClass("js-dropdown"))
-      $(
-        ".js-dropdown .js-dropdown-selected, .js-dropdown .js-dropdown-list"
-      ).removeClass("is-show");
+  $(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 150) {
+      $(".back-to-top").fadeIn();
+    } else {
+      $(".back-to-top").fadeOut();
+    }
   });
 
   // js custom toggle
@@ -188,22 +87,7 @@ $(document).ready(function () {
     jsBtn.on("click", function (e) {
       e.preventDefault();
       $(this).toggleClass("is-active");
-      jsShow.slideToggle().toggleClass("is-active");
-    });
-  });
-
-  // js focus
-  $(".js-focus").each(function () {
-    $(this).on("click", function () {
-      let dataFocus = $(this).attr("data-focus");
-      let dataModal = $(this).attr("data-modal");
-      if (dataModal != "undefined") {
-        $(`#${dataModal}`).on("shown.bs.modal", function () {
-          $(`#${dataFocus}`).focus();
-        });
-      } else {
-        $(`#${dataFocus}`).trigger("focus");
-      }
+      jsShow.toggleClass("is-active");
     });
   });
 
@@ -224,7 +108,6 @@ $(document).ready(function () {
         .animate({
           scrollTop: $(target).offset().top,
         });
-
       location.hash = target;
     }
   };

@@ -104,7 +104,7 @@ section {
   display: block;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "latoregular", sans-serif;
   background-color: #f4f4f4;
   color: #336761;
   font-weight: 400;
@@ -129,6 +129,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "latosemibold", sans-serif;
 }
 
 ol,
@@ -323,7 +324,7 @@ br {
 /**/
 .btn {
   position: relative;
-  padding: 8px 26px;
+  padding: 10px 26px 6px;
   font-size: 14px;
   line-height: 1.71;
   text-transform: uppercase;

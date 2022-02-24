@@ -2,8 +2,88 @@
 
 @font-face {
   font-family: "VanillaDaisyPro";
-  src: url("../fonts/SVNVanillaDaisyPro.ttf") format("truetype");
+  src: url("../fonts/vanilla/SVNVanillaDaisyPro.ttf") format("truetype");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoblack";
+  src: url("../fonts/lato/lato_black-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latobold";
+  src: url("../fonts/lato/lato_bold-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latohairline";
+  src: url("../fonts/lato/lato_hairline-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_hairline-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoheavy";
+  src: url("../fonts/lato/lato_heavy-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoitalic";
+  src: url("../fonts/lato/lato_italic-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latolight";
+  src: url("../fonts/lato/lato_light-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latomedium";
+  src: url("../fonts/lato/lato_medium-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latoregular";
+  src: url("../fonts/lato/lato_regular-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latosemibold";
+  src: url("../fonts/lato/lato_semibold-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "latothin";
+  src: url("../fonts/lato/lato_thin-webfont.woff2") format("woff2"),
+    url("../fonts/lato/lato_thin-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
