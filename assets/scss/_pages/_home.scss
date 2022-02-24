@@ -117,6 +117,7 @@
     }
   }
   &-story {
+    position: relative;
     background: url("../img/home-story-bg01.png") no-repeat center center;
     background-size: 100% 100%;
     color: #113934;
@@ -124,6 +125,7 @@
     line-height: 1.76;
     padding: 275px 0;
     margin-top: -208px;
+    z-index: 1;
     @media only screen and (max-width: 991px) and (min-width: 768px) {
       font-size: 15px;
       line-height: 1.67;
@@ -229,11 +231,69 @@
         }
       }
     }
+    .leaf {
+      &-img {
+        position: absolute;
+        z-index: -1;
+        @media only screen and (max-width: 767px) {
+          z-index: 2;
+        }
+      }
+      &-left {
+        width: calc(456 / 1920 * 100%);
+        left: 0;
+        bottom: 236px;
+        @media only screen and (max-width: 767px) {
+          width: calc(212 / 375 * 100%);
+          left: -2%;
+          bottom: 28%;
+        }
+        @media only screen and (max-width: 767px) and (min-width: 576px) {
+          bottom: auto;
+          top: 37%;
+        }
+        @media only screen and (max-width: 575px) and (min-width: 421px) {
+          bottom: auto;
+          top: 32%;
+        }
+      }
+      &-center {
+        width: calc(235 / 1920 * 100%);
+        left: 39%;
+        bottom: 290px;
+        @media only screen and (max-width: 1199px) {
+          bottom: auto;
+          top: 30%;
+        }
+        @media only screen and (max-width: 767px) {
+          width: calc(110 / 375 * 100%);
+          left: auto;
+          right: -4%;
+          bottom: 36%;
+        }
+        @media only screen and (max-width: 767px) and (min-width: 480px) {
+          bottom: 46%;
+        }
+      }
+      &-top {
+        width: calc(301 / 1920 * 100%);
+        right: 20px;
+        top: 154px;
+        @media only screen and (max-width: 767px) {
+          width: calc(116 / 375 * 100%);
+          left: auto;
+          right: -2%;
+          top: 3.5%;
+        }
+      }
+    }
   }
   &-tea {
+    position: relative;
     background: url("../img/home-tea-bg.png") no-repeat top left / cover;
     padding: 194px 0 187px;
     margin-top: -236px;
+    z-index: 2;
     @media only screen and (max-width: 1199px) and (min-width: 768px) {
       padding-bottom: 140px;
     }
@@ -732,17 +792,19 @@
   }
 
   &-thanks {
+    position: relative;
     background: url("../img/home-thanks-bg.png") no-repeat bottom center / 100%,
       url("../img/home-thanks-bg2.png") repeat-y bottom center / 100%;
     font-size: 16px;
     line-height: 1.87;
     padding: 122px 0 15.6%;
     margin-top: -90px;
+    z-index: 1;
     @media only screen and (max-width: 575px) {
       background: url("../img/home-thanks-bg-sp.png") no-repeat bottom center /
           100%,
         url("../img/home-thanks-bg2.png") repeat-y bottom center / 100%;
-      padding: 122px 0 32%;
+      padding: 32px 0 32%;
       line-height: 1.62;
     }
     &__title {
@@ -762,6 +824,49 @@
         strong {
           font-family: "latomedium", sans-serif;
           font-weight: 500;
+        }
+      }
+    }
+    .leaf {
+      &-img {
+        position: absolute;
+        z-index: -1;
+        @media only screen and (max-width: 767px) {
+          z-index: 2;
+        }
+      }
+      &-left {
+        width: calc(456 / 1920 * 100%);
+        left: 9%;
+        bottom: 81px;
+        @media only screen and (max-width: 767px) {
+          width: calc(179 / 375 * 100%);
+          left: -4%;
+          bottom: 19px;
+        }
+      }
+      &-center {
+        width: calc(235 / 1920 * 100%);
+        right: 21.6%;
+        bottom: 114px;
+        @media only screen and (max-width: 767px) {
+          width: calc(89 / 375 * 100%);
+          left: auto;
+          right: -4%;
+          bottom: 14%;
+        }
+      }
+      &-top {
+        width: calc(301 / 1920 * 100%);
+        right: -2.6%;
+        top: 49px;
+        @media only screen and (max-width: 767px) {
+          width: calc(146 / 375 * 100%);
+          right: -4%;
+          top: -6%;
+        }
+        @media only screen and (max-width: 575px) {
+          top: -3%;
         }
       }
     }

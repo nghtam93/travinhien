@@ -1,9 +1,11 @@
 $("body").addClass("modal-open");
-$(document).ready(function () {
+$(window).on("load", function () {
   $(".loading-page__logo").fadeOut();
   $(".loading-page").delay(350).fadeOut("slow");
   $("body").removeClass("modal-open");
+});
 
+$(document).ready(function () {
   if ($("body").is(".home")) {
     setTimeout(function () {
       new WOW().init();
@@ -121,18 +123,6 @@ $(document).ready(function () {
     $(".nav__mobile").removeClass("active");
     $("body").removeClass("modal-open");
   });
-
-  // $(window).on("load resize", function () {
-  //   var currentPath = window.location.hash;
-  //   $('a[href^="#"]').each(function () {
-  //     var attrHref = $(this).attr("href");
-  //     if (attrHref === currentPath) {
-  //       $(this).parent().addClass("active");
-  //     } else {
-  //       $(this).parent().removeClass("active");
-  //     }
-  //   });
-  // });
 });
 
 function matchHeight($o, m) {
