@@ -4,7 +4,7 @@
     background: url("../img/home-banner.png") no-repeat bottom center / cover;
     font-size: 17px;
     line-height: 1.76;
-    color: #ccd9bd;
+    color: #f2e3ce;
     padding-top: 240px;
     z-index: 2;
     @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -22,7 +22,7 @@
       line-height: 1.67;
     }
     .-title {
-      color: #68e0cf;
+      color: #af8b56;
       font-size: 32px;
       line-height: 1.37;
       margin-bottom: 16px;
@@ -120,7 +120,7 @@
     position: relative;
     background: url("../img/home-story-bg01.png") no-repeat center center;
     background-size: 100% 100%;
-    color: #113934;
+    color: #29432d;
     font-size: 17px;
     line-height: 1.76;
     padding: 275px 0;
@@ -132,9 +132,7 @@
     }
     @media only screen and (max-width: 767px) {
       background: url("../img/home-story-bg-sp01.png") no-repeat top center /
-          100% 67.4%,
-        url("../img/home-story-bg-sp02.png") no-repeat bottom center / 100%
-          32.6%;
+        100% 100%;
       padding: 184px 0 150px;
     }
     @media only screen and (max-width: 767px) and (min-width: 576px) {
@@ -152,7 +150,7 @@
       }
     }
     &__title {
-      color: #113934;
+      color: #af8b56;
       font-size: 56px;
       // font-weight: 700;
       line-height: 0.79;
@@ -310,10 +308,10 @@
 
     .sc__header {
       &__title {
-        color: #68e0cf;
+        color: #af8b56;
       }
       &__sub {
-        color: #bed9bd;
+        color: #af8b56;
       }
     }
     .el {
@@ -331,7 +329,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         border-radius: 16px;
-        color: #0d4e44;
+        color: #29432d;
         display: flex;
         flex-direction: column;
         font-size: 16px;
@@ -379,6 +377,7 @@
           }
         }
         &__title {
+          color: #966a29;
           font-size: 32px;
           line-height: 1.31;
           margin-bottom: 8px;
@@ -398,6 +397,7 @@
           margin-bottom: 24px;
           @media only screen and (max-width: 575px) {
             margin-bottom: 7px;
+            max-width: 238px;
           }
         }
         &__info {
@@ -413,11 +413,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ccd9bd;
+            color: #f2e3ce;
             font-size: 23px;
             width: 40px;
             height: 40px;
-            background-color: rgba(#22a19c, 0.8);
+            background-color: rgba(#2a6433, 0.8);
             border-radius: 50%;
             transition: all 0.5s;
             overflow: hidden;
@@ -441,7 +441,7 @@
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(30px);
         border-radius: 16px;
-        color: rgba(#ffffff, 0.8);
+        color: rgba(#f2e3ce, 0.8);
         font-size: 17px;
         line-height: 1.76;
         margin-top: 165px;
@@ -481,7 +481,7 @@
           }
         }
         .-title {
-          color: #ccd9bd;
+          color: #cdaa76;
           font-size: 32px;
           line-height: 1.37;
           margin-bottom: 16px;
@@ -558,14 +558,12 @@
         @media only screen and (max-width: 767px) {
           column-gap: 12px;
           row-gap: 12px;
-          background: url("../img/home-odd-tea-bg-sp2.png") no-repeat bottom
-            center;
-          background-size: 100%;
           padding: 0 var(--bs-gutter-x, 0.75rem) 40px;
         }
       }
       &__item {
-        background-color: #ccd9bd;
+        background-color: #f2e3ce;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         position: relative;
         width: calc((100% - 100px) / 5);
         overflow: hidden;
@@ -585,7 +583,8 @@
           overflow: hidden;
         }
         &__content {
-          background-color: #ccd9bd;
+          color: #2a6433;
+          background-color: #f2e3ce;
           display: flex;
           flex-direction: column;
           padding: 16px;
@@ -609,10 +608,10 @@
               max-width: 130px;
             }
             a {
-              color: #113934;
+              color: #2a6433;
               transition: all 0.3s;
               &:hover {
-                color: #22a19c;
+                color: #966a29;
               }
             }
           }
@@ -622,7 +621,7 @@
           }
           .-price {
             position: relative;
-            color: #22a19c;
+            color: #966a29;
             font-size: 16px;
             font-family: "latomedium", sans-serif;
             line-height: 1.5;
@@ -640,7 +639,6 @@
               position: absolute;
               left: 0;
               top: 4px;
-              color: #113934;
               margin-right: 7px;
             }
           }
@@ -661,11 +659,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ccd9bd;
+            color: #f2e3ce;
             font-size: 19px;
             width: 32px;
             height: 32px;
-            background-color: rgba(#22a19c, 0.7);
+            background-color: rgba(#2a6433, 0.8);
             border-radius: 50%;
             margin-left: 16px;
             transition: all 0.5s;
@@ -684,8 +682,7 @@
           }
         }
         &:hover {
-          transform: translateY(-5px);
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+          transform: translateY(-8px);
         }
       }
       &__btn {
@@ -696,6 +693,7 @@
         }
       }
       &__box {
+        color: rgba(#f2e3ce, 0.8);
         max-width: 999px;
         margin: 0 auto;
         position: relative;
@@ -706,7 +704,7 @@
           cover;
         @media only screen and (max-width: 575px) {
           background-image: url("../img/home-odd-tea-bg-sp3.jpg");
-          padding-bottom: 52.8%;
+          // padding-bottom: 52.8%;
         }
         &__title {
           text-transform: uppercase;
@@ -736,6 +734,19 @@
           }
           @media only screen and (max-width: 575px) {
             padding: 32px 16px 24px;
+          }
+        }
+        &__logo {
+          @media only screen and (min-width: 576px) {
+            width: 39.6%;
+            padding: 30px 4%;
+          }
+          @media only screen and (max-width: 575px) {
+            width: 100%;
+            padding: 56px 4% 68px;
+          }
+          img {
+            margin: 0 auto;
           }
         }
       }
@@ -804,15 +815,15 @@
         url("../img/home-thanks-bg2.png") repeat-y bottom center / 100%;
       padding: 32px 0 32%;
       line-height: 1.62;
+      margin-top: 0;
     }
     &__title {
-      color: #113934;
+      color: #966a29;
       font-size: 32px;
       line-height: 1.37;
       margin-bottom: 8px;
     }
     &__content {
-      color: #113934;
       max-width: 622px;
       margin: 0 auto;
       p {
@@ -864,7 +875,7 @@
           top: -6%;
         }
         @media only screen and (max-width: 575px) {
-          top: -3%;
+          top: -3.2%;
         }
       }
     }

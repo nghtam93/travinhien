@@ -105,8 +105,8 @@ section {
 }
 body {
   font-family: "latoregular", sans-serif;
-  background-color: #f4f4f4;
-  color: #336761;
+  background-color: #f5f5f5;
+  color: #af8b56;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -333,7 +333,7 @@ br {
   line-height: 1.71;
   text-transform: uppercase;
   color: #ffffff;
-  background: rgba(#1596e1, 0.8);
+  background: rgba(#2a6433, 0.8);
   border: 0;
   border-radius: 24px;
   min-width: 150px;
@@ -365,6 +365,7 @@ br {
     box-shadow: none;
   }
   &:hover {
+    background: rgba(#2a6433, 0.8);
     color: #fff;
     &:before {
       width: 100%;
@@ -379,18 +380,6 @@ br {
     align-items: center;
     justify-content: center;
     z-index: 1;
-  }
-
-  &.-wallet {
-    span:before {
-      content: "\e904";
-      font-family: "icomoon";
-      position: relative;
-      top: -1px;
-      font-size: 22px;
-      font-weight: 400;
-      margin-right: 14px;
-    }
   }
 }
 

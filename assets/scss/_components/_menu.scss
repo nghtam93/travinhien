@@ -7,7 +7,7 @@
   a {
     position: relative;
     display: block;
-    color: #22a19c;
+    color: #cdaa76;
     font-size: 16px;
     line-height: 1.5;
     padding: 11px 0;
@@ -47,7 +47,7 @@
       &.active,
       &:hover {
         a {
-          color: #ccd9bd;
+          color: #f2e3ce;
           &:after {
             bottom: 0;
             opacity: 1;
@@ -70,7 +70,7 @@
   .iconz-bar {
     width: 32px;
     transition: all 0.3s;
-    background: #22a19c;
+    background: #f2e3ce;
     display: block;
     height: 4px;
     border-radius: 2px;
@@ -93,6 +93,7 @@
   }
   &.active {
     .iconz-bar {
+      background: #966a29;
       &:nth-of-type(1) {
         width: 32px;
         -ms-transform: rotate(45deg);
@@ -199,7 +200,7 @@
         a {
           background-color: transparent;
           border-radius: 10px;
-          color: #22a19c;
+          color: #2a6433;
           display: block;
           font-weight: 600;
           font-size: 16px;
