@@ -44,7 +44,7 @@
           margin-right: 18px;
         }
       }
-      &.active,
+      &.active, &.current-menu-item,
       &:hover {
         a {
           color: #f2e3ce;
