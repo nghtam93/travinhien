@@ -124,26 +124,26 @@ $(document).ready(function () {
   });
 });
 
-function matchHeight($o, m) {
-  $o.css("height", "auto");
-  var foo_length = $o.length;
+// function matchHeight($o, m) {
+//   $o.css("height", "auto");
+//   var foo_length = $o.length;
 
-  for (var i = 0; i < Math.ceil(foo_length / m); i++) {
-    var maxHeight = 0;
-    for (var j = 0; j < m; j++) {
-      if ($o.eq(i * m + j).height() > maxHeight) {
-        maxHeight = $o.eq(i * m + j).height();
-      }
-    }
-    for (var k = 0; k < m; k++) {
-      $o.eq(i * m + k).height(maxHeight);
-    }
-  }
-}
+//   for (var i = 0; i < Math.ceil(foo_length / m); i++) {
+//     var maxHeight = 0;
+//     for (var j = 0; j < m; j++) {
+//       if ($o.eq(i * m + j).height() > maxHeight) {
+//         maxHeight = $o.eq(i * m + j).height();
+//       }
+//     }
+//     for (var k = 0; k < m; k++) {
+//       $o.eq(i * m + k).height(maxHeight);
+//     }
+//   }
+// }
 
-$(function () {
-  var $match = $(".js-max-height");
-  $(window).on("load resize", function () {
-    matchHeight($match, 4);
-  });
-});
+// $(function () {
+//   var $match = $(".js-max-height");
+//   $(window).on("load resize", function () {
+//     matchHeight($match, 4);
+//   });
+// });
