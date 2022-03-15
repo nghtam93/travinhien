@@ -1,0 +1,22 @@
+/*
+Theme Name: Trà Vị Nhiên
+Author: wordpress.org
+Author URI: https://wordpress.org
+Description: Dntheme brings your site to life with header video and immersive featured images.
+Version: 1.3.5
+Text Domain: dntheme
+Tags: best theme
+*/
+body:not(.home) .header{
+	position: relative;
+}
+
+ul.product_list_widget li{list-style:none;padding:10px 0 5px 75px;min-height:80px;position:relative;overflow:hidden;vertical-align:top;line-height:1.33}
+ul.product_list_widget li+li{border-top:1px solid #ececec}
+.widget_shopping_cart ul.product_list_widget li{padding-right:30px}
+ul.product_list_widget li>span.reviewer{font-size:.8em}
+ul.product_list_widget li a:not(.remove){display:block;margin-bottom:5px;padding:0;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;line-height:1.3}
+ul.product_list_widget li a.remove{position:absolute;right:0;z-index:9}
+ul.product_list_widget li dl{margin:0;line-height:1;font-size:.7em}
+ul.product_list_widget li img{top:10px;position:absolute;left:0;width:60px;height:60px;margin-bottom:5px;-o-object-fit:cover;object-fit:cover;-o-object-position:50% 50%;object-position:50% 50%}
+ul.product_list_widget li .quantity{display:block;margin-top:3px;font-size:.85em;opacity:.6}

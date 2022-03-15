@@ -1,0 +1,16 @@
+@import "_components/fonts";
+
+@import "../libs/bootstrap/css/bootstrap.css";
+@import "_components/base";
+
+// Component
+@import "_components/animate";
+@import "_components/header";
+@import "_components/footer";
+@import "_components/menu";
+@import "_components/general";
+@import "_components/form";
+@import "_components/pagination";
+// Page
+
+@import "_pages/home";

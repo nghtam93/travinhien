@@ -1,0 +1,2 @@
+2022-03-05T02:52:33+00:00 CRITICAL require(): Failed opening required 'D:\xampp\htdocs\wp\travinhien/wp-content/themes/travinhien/inc/woocommerce.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\functions.php on line 181
+
