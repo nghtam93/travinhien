@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Trà Vị Nhiên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/image-featured.jpg">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/libs/flickity/flickity.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/libs/fancybox-v4/fancybox.css"/>
+    <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+  <body class="home modal-open">
+    <div class="wrapper">
+      <div class="loading-page">
+        <div class="loading-page__logo">
+          <img src="images/logo.svg" alt="Logo" style="max-width: 143px;">
+          <div class="text-center mt-3">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header -fix">
+        <div class="container d-flex align-items-center justify-content-between">
+          <nav class="main__nav">
+            <div class="menu-mb__btn d-lg-none">
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+              <span class="iconz-bar"></span>
+            </div>
+            <div class="main__nav__wrap d-none d-lg-block">
+              <ul class="el__menu">
+                <li class="menu-item active"><a href="#banner">giới thiệu</a></li>
+                <li class="menu-item"><a href="#our-story">Về chúng tôi</a></li>
+                <li class="menu-item"><a href="product.html">Sản phẩm</a></li>
+                <li class="menu-item"><a href="#">Công dụng</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- main__nav -->
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="Logo">
+            </a>
+          </h1> <!-- .logo -->
+          <div class="action d-flex align-items-center justify-content-end">
+            <div class="action__search js-toggle">
+              <div class="search__btn d-lg-none js-toggle-btn"><i class="icon-search"></i></div>
+              <form action="#" method="POST" class="search__form js-toggle-show">
+                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                <button type="submit"><i class="icon-search"></i></button>
+              </form>
+            </div>
+            <!-- action__search -->
+            <div class="action__cart">
+              <a href="#" class="cart-btn -cart"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+          <!-- action -->
+        </div>
+      </header>
+
+      <div class="wrap__page -single">
+
+        <div class="dn__breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+          <div class="container">
+              <span>
+                  <a href="" class="home"><span>Trang chủ</span></a>
+              </span>
+              /
+              <span property="itemListElement" typeof="ListItem">
+                  <a href=""><span>Sản phẩm</span></a>
+              </span>
+              /
+              <span property="itemListElement" typeof="ListItem">
+                  <a href=""><span>Trà mix sẵn</span></a>
+              </span>
+              /
+              <span>
+                  <span class="current-item">Thông tin Trà Dưỡng Nhan </span>
+              </span>
+          </div>
+        </div>
+
+        <div class="container">
+
+          <div class="product__single--main">
+            <div class="row gx-lg-5">
+              <div class="col-md-6">
+                <div class="single__gallery">
+                  <div class="product-gallery">
+                      <div class="images" data-columns="4">
+                          <figure
+                              class="product-gallery-slider slider"
+                              data-flickity='{
+                                        "cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":false,"adaptiveHeight": true,
+                                        "imagesLoaded": true,"lazyLoad": 1,"dragThreshold" : 15,"pageDots": false,"rightToLeft": false
+                               }'>
+                              <div class="slide">
+                                  <a href="images/single-product-01.png" data-fancybox="group" data-caption="">
+                                      <img src="images/single-product-01.png" />
+                                      <div class="dn__zoom"><i class="fa fa-expand" aria-hidden="true"></i></div>
+                                  </a>
+                              </div>
+                              <div class="slide">
+                                  <a href="images/single-product-02.png" data-fancybox="group" data-caption="">
+                                      <img src="images/single-product-02.png" />
+                                      <div class="dn__zoom"><i class="fa fa-expand" aria-hidden="true"></i></div>
+                                  </a>
+                              </div>
+                              <div class="slide">
+                                  <a href="images/single-product-03.png" data-fancybox="group" data-caption="">
+                                      <img src="images/single-product-03.png" />
+                                      <div class="dn__zoom"><i class="fa fa-expand" aria-hidden="true"></i></div>
+                                  </a>
+                              </div>
+                              <div class="slide">
+                                  <a href="images/single-product-04.png" data-fancybox="group" data-caption="">
+                                      <img src="images/single-product-04.png" />
+                                      <div class="dn__zoom"><i class="fa fa-expand" aria-hidden="true"></i></div>
+                                  </a>
+                              </div>
+                          </figure>
+                      </div>
+
+                      <div
+                          class="product-thumbnails thumbnails slider-no-arrows slider"
+                          data-flickity='{
+                                "cellAlign": "left","wrapAround": false,"autoPlay": false,"prevNextButtons": true,"asNavFor": ".product-gallery-slider",
+                                "percentPosition": true,"imagesLoaded": true,"pageDots": false,"rightToLeft": false,"contain": true
+                            }'>
+                          <div class="col-3 product__column">
+                              <a>
+                                  <img src="images/single-product-01.png" />
+                              </a>
+                          </div>
+                          <div class="col-3 product__column">
+                              <a>
+                                  <img src="images/single-product-02.png" />
+                              </a>
+                          </div>
+                          <div class="col-3 product__column">
+                              <a>
+                                  <img src="images/single-product-03.png" />
+                              </a>
+                          </div>
+                          <div class="col-3 product__column">
+                              <a>
+                                  <img src="images/single-product-04.png" />
+                              </a>
+                          </div>
+                      </div>
+                      <!-- .product-thumbnails -->
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <div class="single-product__meta">
+                  <h1 class="entry-title">01 - Trà Dưỡng Nhan</h1>
+                  <p class="el__sub">Lưu giữ nét xuân, cân bằng vóc dáng</p>
+
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="ic-star"></i>
+                    <i class="ic-star"></i>
+                    <i class="ic-star"></i>
+                    <i class="ic-star"></i>
+                    <i class="ic-star"></i>
+
+                    <span class="ms-3 d-inline-block">Đánh giá</span>
+                  </div>
+                  <div class="el__list">
+                    <ul>
+                      <li><span>Thành phần:</span> Hoa Hồng, Táo Đỏ, Long Nhãn, Kỷ Tử</li>
+                      <li><span>Trạng thái:</span> Còn hàng</li>
+                      <li><span>Khối lượng tịnh:</span> 05 gói x 10gram</li>
+                      <li>Sản phẩm tặng kèm túi giấy xách ngoài</li>
+                    </ul>
+                  </div>
+
+                  <div class="mb-3">
+                    <p>Hạn sử dụng: 6 tháng kể từ ngày sản xuất</p>
+                    <p>Sản xuất tại: Việt Nam</p>
+                  </div>
+
+                  <div class="d-flex align-items-baseline mb-3">
+                    <span class="price"><span class="amount"><bdi>500,000&nbsp;<span class="woocommerce-Price-currencySymbol">VNĐ</span></bdi></span></span>
+                  </div>
+
+                  <form action="" class="cart">
+                    <div class="quantity s1 d-inline-block">
+                        <input class="minus" type="button" value="-" />
+                        <input type="number" id="quantity_622ef80b631c7" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" inputmode="numeric" />
+                        <input class="plus" type="button" value="+" />
+                    </div>
+                    <button type="submit" name="add-to-cart" value="562" class="single_add_to_cart_button button alt">Thêm vào giỏ hàng</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="woocommerce-tabs wc-tabs-wrapper">
+            <ul class="tabs wc-tabs" role="tablist">
+                <li class="description_tab active" id="tab-title-description" role="tab" aria-controls="tab-description">
+                    <a href="#tab-description"> Thông tin chi tiết </a>
+                </li>
+                <li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+                    <a href="#tab-reviews"> Đánh giá (0) </a>
+                </li>
+            </ul>
+            <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab -custom" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style="">
+                <div class="tab-panels">
+                    <div id="tab-description" class="panel entry-content active">
+                        <p><strong>Công dụng:</strong></p>
+                        <p>Giữ ẩm và làm da căng bóng, chống lão hoá, ngăn ngừa quầng thâm và mụn viêm, thúc đẩy sản sinh collagen, nuôi dưỡng tóc và móng, hỗ trợ hệ tiêu hoá, thải độc, giảm căng thẳng, hỗ trợ ngăn ngừa ung thư, hỡ trợ giảm cân an toàn ...</p>
+                        <p><strong>Hướng dẫn phà trà:</strong></p>
+                        <p>
+                        - Tráng dụng cụ pha trà bằng nước nóng
+                        - Lấy gói trà cho vào ly, chai. Đánh thức trà bằng cách tráng trà qua nước sôi rồi đổ phần nước này
+                        - Cho thêm khoảng 200 - 300ml nước sôi 85 - 90 độ, ủ trà trong khoảng 3 phút rồi thưởng thức. Có thể thưởng nóng hoặc lạnh.</p>
+                        <p><strong>Dùng thêm mật ong hoặc đường phèn để trà thơm ngon hơn.</strong> </p>
+
+                        <div class="tab-description__info">
+                          <p>Fanpage: Vị Nhiên</p>
+                          <p>Hotline: 0345 817 226</p>
+                          <p>Khối lượng tịnh: 50 gram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab -custom" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" style="display: none;">
+                <div id="reviews" class="woocommerce-Reviews row">
+
+                </div>
+            </div>
+          </div>
+
+          <section class="related products">
+              <header class="header__title">
+                  <div class="box__title">
+                      <h2 class="title__box"><span>Một số sản phẩm liên quan</span></h2>
+                  </div>
+              </header>
+
+              <div class="row el__product row-cols-2 row-cols-md-4 row-cols-xl-5 mb-5 g-2 g-sm-3 justify-content-center">
+                <div class="col">
+                  <div class="product__item wow fadeInUp" style="visibility: visible;">
+                    <div class="product__item__thumb">
+                      <a href="#" class="dnfix__thumb">
+                        <img src="./images/home-odd-tea-img01.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="product__item__content">
+                      <h3 class="-title text-truncate"><a href="#">Trà hoàng cúc chi hữu cơ</a></h3>
+                      <div class="item__content d-flex align-items-end">
+                        <div class="-info">
+                          <div class="-weight">100 gram</div>
+                          <div class="-price"><i class="icon-price"></i>100,000 VNĐ</div>
+                        </div>
+                        <a href="#" class="-cart"><i class="icon-cart-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="product__item wow fadeInUp" style="visibility: visible;">
+                    <div class="product__item__thumb">
+                      <a href="#" class="dnfix__thumb">
+                        <img src="./images/home-odd-tea-img02.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="product__item__content">
+                      <h3 class="-title text-truncate"><a href="#">Trà bạch cúc chi hữu cơ</a></h3>
+                      <div class="item__content d-flex align-items-end">
+                        <div class="-info">
+                          <div class="-weight">100 gram</div>
+                          <div class="-price"><i class="icon-price"></i>100,000 VNĐ</div>
+                        </div>
+                        <a href="#" class="-cart"><i class="icon-cart-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product__item wow fadeInUp" style="visibility: visible;">
+                    <div class="product__item__thumb">
+                      <a href="#" class="dnfix__thumb">
+                        <img src="./images/home-odd-tea-img03.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="product__item__content">
+                      <h3 class="-title text-truncate"><a href="#">Trà hoa đậu biếc hữu cơ</a></h3>
+                      <div class="item__content d-flex align-items-end">
+                        <div class="-info">
+                          <div class="-weight">100 gram</div>
+                          <div class="-price"><i class="icon-price"></i>100,000 VNĐ</div>
+                        </div>
+                        <a href="#" class="-cart"><i class="icon-cart-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product__item wow fadeInUp" style="visibility: visible;">
+                    <div class="product__item__thumb">
+                      <a href="#" class="dnfix__thumb">
+                        <img src="./images/home-odd-tea-img04.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="product__item__content">
+                      <h3 class="-title text-truncate"><a href="#">Trà hoa nhài hữu cơ</a></h3>
+                      <div class="item__content d-flex align-items-end">
+                        <div class="-info">
+                          <div class="-weight">100 gram</div>
+                          <div class="-price"><i class="icon-price"></i>100,000 VNĐ</div>
+                        </div>
+                        <a href="#" class="-cart"><i class="icon-cart-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="product__item wow fadeInUp" style="visibility: visible;">
+                    <div class="product__item__thumb">
+                      <a href="#" class="dnfix__thumb">
+                        <img src="./images/home-odd-tea-img05.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="product__item__content">
+                      <h3 class="-title text-truncate"><a href="#">Trà hồng hoa hữu cơ</a></h3>
+                      <div class="item__content d-flex align-items-end">
+                        <div class="-info">
+                          <div class="-weight">100 gram</div>
+                          <div class="-price"><i class="icon-price"></i>100,000 VNĐ</div>
+                        </div>
+                        <a href="#" class="-cart"><i class="icon-cart-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+
+        </div>
+      </div>
+
+      <section class="home-thanks text-center">
+        <div class="container">
+          <h2 class="home-thanks__title fm-vanilla wow fadeInUp">Lời cảm ơn</h2>
+          <div class="home-thanks__content wow fadeInUp">
+            <p>
+              Vị Nhiên vô cùng biết ơn bạn đã ghé thăm, tin tưởng và dành sự yêu mến cho chúng tôi. Chúng tôi hi vọng được vinh dự trở thành một người bạn, đồng hành cùng bạn trên con đường đi đến đích đến của bình an và hạnh phúc thực.<br />
+              Vị Nhiên xin được gửi lời tri ân và biết ơn sâu sắc đến những Nhân sinh trà - cái tên thân thương mà Vị Nhiên dùng để gọi những con người âm thầm, tần tảo sớm hôm bên vườn trà hữu cơ, trồng trọt, chăm sóc, chế biến và thổi hồn cho những chén trà hoa thơm dịu. 
+            </p>
+            <p>
+              Hoa nở rồi hoa sẽ tàn. Nhưng chính những con người ấy đã giúp lưu giữ nét đẹp “không bao giờ tàn” của hoa vào trong từng chén trà Vị Nhiên và rồi để sự kỳ diệu và lung linh ấy của thiên nhiên được hoà quyện trong mỗi con người, vỗ về, nuỗi dưỡng sức khoẻ và tâm hồn chúng ta. <br />
+              Một sự biết ơn vô bờ bến với mẹ thiên nhiên và những Nhân sinh trà. <br />
+              <strong><i>Vị Nhiên xin cảm ơn!</i></strong>
+            </p>
+          </div>
+        </div>
+        <div class="leaf-img leaf-left wow fadeInLeft"><img src="./assets/img/leaf-img01.png" alt=""></div>
+        <div class="leaf-img leaf-center wow fadeInUp"><img src="./assets/img/leaf-img02.png" alt=""></div>
+        <div class="leaf-img leaf-top wow fadeInDown"><img src="./assets/img/leaf-img03.png" alt=""></div>
+      </section>
+      <!-- end section home-thanks -->
+
+      <div class="back-to-top">
+        <div class="back-to-top__wrap">
+          <img src="./assets/img/arrow-top.png" alt="">
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-info">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-info__logo"><img src="./images/logo-footer.png" alt="Trà Vị Nhiên"></div>
+                <div class="footer-info__txt">
+                  Vị Nhiên vô cùng biết ơn bạn đã ghé thăm, tin tưởng và dành sự yêu mến cho chúng tôi. Chúng tôi hi vọng được vinh dự trở thành một người bạn, đồng hành cùng bạn trên con đường đi đến đích đến của bình an và hạnh phúc thực
+                </div>
+              </div>
+              <div class="offset-lg-1 col-lg-5 col-md-6">
+                <div class="footer__item">
+                  <div class="footer__title">Hỗ trợ tư vấn</div>
+                  <div class="footer__support">Để lại email để nhận tin tức mới nhất của chúng tôi!</div>
+                  <form action="#" method="POST" class="footer__form">
+                    <input type="text" class="form-control" placeholder="Nhập email" />
+                    <button type="submit" class="btn btn-primary">gửi</button>
+                  </form>
+                  <div class="footer__social">
+                    <p class="footer__social__title">Theo dõi chúng tôi tại:</p>
+                    <ul class="-list">
+                      <li><a href="#" target="_blank"><img src="assets/img/facebook.svg" width="24" height="24" alt=""></a></li>
+                      <li><a href="#" target="_blank"><img src="assets/img/youtube.svg" width="24" height="24" alt=""></a></li>
+                      <li><a href="#" target="_blank"><img src="assets/img/twitter.svg" width="24" height="24" alt=""></a></li>
+                      <li><a href="#" target="_blank"><img src="assets/img/zalo.svg" width="24" height="24" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- footer-info -->
+          <div class="footer-copyright text-center">
+            <div class="copyright">
+              <p>Travinhien.com | <span class="fm-montserrat">&copy; Copyright 2022 All right reserved.</span></p>
+            </div><!-- copyright -->
+          </div><!-- footer-bottom -->
+        </div>
+      </footer>
+
+      <nav id="menu__mobile" class="nav__mobile">
+        <div class="nav__mobile__content">
+          <div class="menu-mb__btn">
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+            <span class="iconz-bar"></span>
+          </div>
+          <ul class="nav__mobile--ul">
+            <li class="menu-item active"><a href="#banner">giới thiệu</a></li>
+            <li class="menu-item"><a href="#our-story">Về chúng tôi</a></li>
+            <li class="menu-item"><a href="#tea-product">Sản phẩm</a></li>
+            <li class="menu-item"><a href="#">Công dụng</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </div> <!-- .wrapper -->
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script src="assets/libs/fancybox-v4/fancybox.umd.js"></script>
+    <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

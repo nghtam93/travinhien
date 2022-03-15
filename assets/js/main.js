@@ -3,11 +3,11 @@ $(window).on("load", function () {
   $(".loading-page__logo").fadeOut();
   $(".loading-page").delay(350).fadeOut("slow");
   $("body").removeClass("modal-open");
-  if ($("body").is(".home")) {
+  // if ($("body").is(".home")) {
     setTimeout(function () {
       new WOW().init();
     }, 500);
-  }
+  // }
 });
 
 $(document).ready(function () {
@@ -23,21 +23,6 @@ $(document).ready(function () {
     header_sticky.offset().top > 5
       ? header_sticky.addClass("is-active")
       : header_sticky.removeClass("is-active");
-  });
-
-  /*----Get Header Height ---*/
-  function get_header_height() {
-    var header_sticky = $("header").outerHeight();
-    $("body").css("--header-height", header_sticky + "px");
-  }
-
-  setTimeout(function () {
-    get_header_height();
-  }, 500);
-  $(window).on("load resize scroll", function () {
-    setTimeout(() => {
-      get_header_height();
-    }, 250);
   });
 
   /*----Menu---*/
@@ -124,26 +109,29 @@ $(document).ready(function () {
   });
 });
 
-// function matchHeight($o, m) {
-//   $o.css("height", "auto");
-//   var foo_length = $o.length;
+/*************************/
+function isInt(n) {
+   return parseInt(n) === n
+}
+function number__toFixed(value) {
+    return isInt(value) ? value : value.toFixed(1);
+}
 
-//   for (var i = 0; i < Math.ceil(foo_length / m); i++) {
-//     var maxHeight = 0;
-//     for (var j = 0; j < m; j++) {
-//       if ($o.eq(i * m + j).height() > maxHeight) {
-//         maxHeight = $o.eq(i * m + j).height();
-//       }
-//     }
-//     for (var k = 0; k < m; k++) {
-//       $o.eq(i * m + k).height(maxHeight);
-//     }
-//   }
-// }
+$(document).on('click', '.quantity.s1 input[type="button"]' ,quantity_input);
 
-// $(function () {
-//   var $match = $(".js-max-height");
-//   $(window).on("load resize", function () {
-//     matchHeight($match, 4);
-//   });
-// });
+function quantity_input(argument) {
+  var input = $(this);
+  var input_type = 'plus'
+  if($(this).hasClass('minus')) input_type = 'minus'
+
+  var input_number =  $(this).parent('.quantity').find('input[type="number"]');
+  var input_number_val = (input_number.val()) ? parseFloat(input_number.val()) : 0
+  // Get Setting
+  var step = (input_number.attr('step')) ? parseFloat(input_number.attr('step')) : 1
+  var min = (input_number.attr('min')) ? parseFloat(input_number.attr('min')) : 0
+  var max = (input_number.attr('max')) ? parseFloat(input_number.attr('max')) : 999
+
+  if(input_type == 'plus') result = number__toFixed( input_number_val + step )
+  else result = number__toFixed(input_number_val - step)
+  if (result >= min && result <= max) input_number.val( result ).change();
+}

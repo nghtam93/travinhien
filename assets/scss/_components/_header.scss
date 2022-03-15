@@ -6,8 +6,14 @@
   padding: 40px 0;
   z-index: 99;
   transition: all 0.5s;
-  @media only screen and (min-width: 992px) {
-    position: absolute;
+  &.is-active{
+    padding: 10px 0;
+    background-color: #1a2334;
+    .logo {
+      img{
+        max-height: 80px;
+      }
+    }
   }
   @media only screen and (max-width: 1199px) and (min-width: 576px) {
     padding: 25px 0;
@@ -17,7 +23,11 @@
   }
   .logo {
     width: 143px;
+    text-align: center;
     transition: all 0.5s;
+    img{
+      max-height: 116px;
+    }
     @media only screen and (max-width: 1199px) and (min-width: 992px) {
       width: 140px;
     }
