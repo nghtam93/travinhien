@@ -174,7 +174,7 @@ ul#shipping_method label{margin-bottom:0;}
         }
     }
     .quantity{
-        margin-right: 16px;
+        // margin-right: 16px;
     }
     .single_add_to_cart_button{
         margin-bottom:0;
@@ -253,10 +253,41 @@ ul#shipping_method label{margin-bottom:0;}
         border: 2px solid transparent;
         transition: border .5s;
     }
-    a:hover img,.is-nav-selected a img{
+    a:hover img, .is-selected a img{
         border-color:#966a29;
         opacity:1;
     }
+    .flickity-page-dots {
+        left: 0;
+        bottom: -15px;
+        .dot {
+            background: #E9C48E;
+            width: 12px;
+            height: 4px;
+            border-radius: 2px;
+            margin: 0 2px;
+            transition: all .5s;
+            &.is-selected{
+                width: 22px;
+            }
+        }
+    }
+
+
+    // .flickity-page-dots {
+    //     bottom: -15px;
+    //     .dot {
+    //         background: #E9C48E;
+    //         width: 6px;
+    //         height: 2px;
+    //         border-radius: 2px;
+    //         margin: 0 2px;
+    //         transition: all .5s;
+    //         &.is-selected{
+    //             width: 10px;
+    //         }
+    //     }
+    // }
 
 }
 
@@ -268,7 +299,7 @@ ul#shipping_method label{margin-bottom:0;}
 .woocommerce-tabs{
     font-size: 18px;
     margin-bottom: 48px;
-    .tabs.wc-tabs{list-style:none;padding-left:0;border-top:1px solid #ececec;margin:0 0 15px;}
+    .tabs.wc-tabs{list-style:none;padding-left:0;margin:0 0 15px;}
     .tabs.wc-tabs li{display:inline-block;font-weight:400;line-height:36px;
         background:#CDAA76;padding:0 15px;font-size:14px;
         border-radius: 24px;
@@ -365,6 +396,20 @@ form.woocommerce-cart-form{overflow-x:auto;}
 .woocommerce-checkout .form-row,.woocommerce-form .form-row{display:-webkit-box;display:-ms-flexbox;display:block;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:0;margin-left:0;}
 
 /* Responsive */
+@media (max-width:991px){
+    .product__single--main {
+        margin-bottom: 50px;
+    }
+    .woocommerce-tabs .wc-tab {
+        padding: 32px 30px;
+    }
+    .quantity .qty {
+        width: 38px;
+    }
+    .product-thumbnails .flickity-slider>.product__column {
+        padding: 0 4px 0;
+    }
+}
 @media (max-width:849px){
     .wc-forward,.wc-forward,.woocommerce-Button,.woo-button,button[type="submit"],input[type="submit"],input[type="reset"],input[type="button"],.product__single--main .button{padding:0px 1em;}
 }

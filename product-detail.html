@@ -133,7 +133,7 @@
                           class="product-thumbnails thumbnails slider-no-arrows slider"
                           data-flickity='{
                                 "cellAlign": "left","wrapAround": false,"autoPlay": false,"prevNextButtons": true,"asNavFor": ".product-gallery-slider",
-                                "percentPosition": true,"imagesLoaded": true,"pageDots": false,"rightToLeft": false,"contain": true
+                                "percentPosition": true,"imagesLoaded": true,"pageDots": true,"rightToLeft": false,"contain": true
                             }'>
                           <div class="col-3 product__column">
                               <a>
@@ -194,7 +194,7 @@
                   </div>
 
                   <form action="" class="cart">
-                    <div class="quantity s1 d-inline-block">
+                    <div class="quantity s1 d-inline-block me-2 me-lg-3">
                         <input class="minus" type="button" value="-" />
                         <input type="number" id="quantity_622ef80b631c7" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="SL" size="4" inputmode="numeric" />
                         <input class="plus" type="button" value="+" />
@@ -250,8 +250,8 @@
                   </div>
               </header>
 
-              <div class="row el__product row-cols-2 row-cols-md-4 row-cols-xl-5 mb-5 g-2 g-sm-3 justify-content-center">
-                <div class="col">
+              <div class="flickity" data-flickity='{ "wrapAround": true, "cellAlign": "left", "pageDots": true, "prevNextButtons": false}'>
+                <div class="slider__item__wrap col-6 col-md-3 col-lg-20">
                   <div class="product__item wow fadeInUp" style="visibility: visible;">
                     <div class="product__item__thumb">
                       <a href="#" class="dnfix__thumb">
@@ -270,7 +270,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="slider__item__wrap col-6 col-md-3 col-lg-20">
                   <div class="product__item wow fadeInUp" style="visibility: visible;">
                     <div class="product__item__thumb">
                       <a href="#" class="dnfix__thumb">
@@ -290,7 +290,7 @@
                   </div>
                 </div>
 
-                <div class="col">
+                <div class="slider__item__wrap col-6 col-md-3 col-lg-20">
                   <div class="product__item wow fadeInUp" style="visibility: visible;">
                     <div class="product__item__thumb">
                       <a href="#" class="dnfix__thumb">
@@ -310,7 +310,7 @@
                   </div>
                 </div>
 
-                <div class="col">
+                <div class="slider__item__wrap col-6 col-md-3 col-lg-20">
                   <div class="product__item wow fadeInUp" style="visibility: visible;">
                     <div class="product__item__thumb">
                       <a href="#" class="dnfix__thumb">
@@ -330,7 +330,7 @@
                   </div>
                 </div>
 
-                <div class="col">
+                <div class="slider__item__wrap col-6 col-md-3 col-lg-20">
                   <div class="product__item wow fadeInUp" style="visibility: visible;">
                     <div class="product__item__thumb">
                       <a href="#" class="dnfix__thumb">
@@ -349,6 +349,30 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="slider__item__wrap col-6 col-md-3 col-lg-20">
+                  <div class="product__item wow fadeInUp">
+                    <div class="product__item__thumb">
+                      <a href="#" class="dnfix__thumb">
+                        <img src="./images/home-odd-tea-img06.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="product__item__content">
+                      <h3 class="-title text-truncate"><a href="#">Trà sen Bách Diệp</a></h3>
+                      <div class="item__content d-flex align-items-end">
+                        <div class="-info">
+                          <div class="-weight">100 gram</div>
+                          <div class="-price"><i class="icon-price"></i>100,000 VNĐ</div>
+                        </div>
+                        <a href="#" class="-cart"><i class="icon-cart-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
               </div>
           </section>
 

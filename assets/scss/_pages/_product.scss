@@ -142,8 +142,8 @@
       font-family: 'latomedium';
       font-weight: 600;
       font-size: 40px;
-      line-height: 50px;
       color: #29432D;
+      margin-bottom: 15px;
     }
     .el__sub{
       font-family: 'latoitalic';
@@ -151,6 +151,11 @@
       font-size: 18px;
       line-height: 28px;
       color: #966A29;
+    }
+  }
+  @media (max-width: 991px) {
+    &__meta .entry-title {
+        font-size: 30px;
     }
   }
 }

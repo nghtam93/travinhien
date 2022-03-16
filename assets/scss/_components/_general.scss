@@ -43,9 +43,20 @@
 /*breadcrumb*/
 .dn__breadcrumb{
   padding:15px 0;
-margin-bottom:30px;}
-.dn__breadcrumb,.dn__breadcrumb a{color:#AF8B56;}
-.dn__breadcrumb .sc__wrap{padding:15px 0;}
+  margin-bottom:30px;
+  color:#AF8B56;
+  a{
+    color:#AF8B56;
+  }
+  .sc__wrap{
+    padding:15px 0;
+  }
+  @media (max-width: 991px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 
 
 /*Sc Header*/
