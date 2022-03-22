@@ -1,0 +1,40 @@
+2022-03-21T14:13:44+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::formatted_shipping_address() in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php:34
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\templates\order\order-details.php(113): wc_get_template('order/order-det...', Array)
+#2 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2657): wc_get_template('order/order-det...', Array)
+#4 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): woocommerce_order_details_table(3536)
+#5 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 D:\xampp\htdocs\wp\travinhie in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php on line 34
+
+2022-03-21T14:14:03+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\WooCommerce\Admin\Overrides\Order::formatted_shipping_address() in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php:34
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\templates\order\order-details.php(113): wc_get_template('order/order-det...', Array)
+#2 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2657): wc_get_template('order/order-det...', Array)
+#4 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): woocommerce_order_details_table(3536)
+#5 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 D:\xampp\htdocs\wp\travinhie in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php on line 34
+
+2022-03-21T14:16:09+00:00 CRITICAL Uncaught Error: Call to undefined function formatted_shipping_address() in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php:34
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\templates\order\order-details.php(113): wc_get_template('order/order-det...', Array)
+#2 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2657): wc_get_template('order/order-det...', Array)
+#4 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): woocommerce_order_details_table(3536)
+#5 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 D:\xampp\htdocs\wp\travinhien\wp-includes\plugin.php(474): WP_Hook->do_a in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php on line 34
+
+2022-03-21T14:16:29+00:00 CRITICAL Uncaught Error: Call to undefined function formatted_shipping_address() in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php:34
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\templates\order\order-details.php(113): wc_get_template('order/order-det...', Array)
+#2 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2657): wc_get_template('order/order-det...', Array)
+#4 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): woocommerce_order_details_table(3536)
+#5 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#6 D:\xampp\htdocs\wp\travinhien\wp-includes\plugin.php(474): WP_Hook->do_a in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\order\order-details-customer.php on line 34
+

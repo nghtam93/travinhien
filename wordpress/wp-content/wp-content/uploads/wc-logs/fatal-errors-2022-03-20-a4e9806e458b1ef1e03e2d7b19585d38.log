@@ -1,0 +1,44 @@
+2022-03-20T08:47:41+00:00 CRITICAL Uncaught Error: Call to undefined function flatsome_wc_get_gallery_image_html() in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\single-product\product-image.php:55
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1529): wc_get_template('single-product/...')
+#2 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): woocommerce_show_product_images('')
+#3 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 D:\xampp\htdocs\wp\travinhien\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\content-single-product.php(44): do_action('woocommerce_bef...')
+#6 D:\xampp\htdocs\wp\travinhien\wp-includes\template.php(772): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\wp\travinhien\w in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\single-product\product-image.php on line 55
+
+2022-03-20T08:47:57+00:00 CRITICAL Uncaught Error: Call to undefined function flatsome_wc_get_gallery_image_html() in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\single-product\product-image.php:55
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1529): wc_get_template('single-product/...')
+#2 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): woocommerce_show_product_images('')
+#3 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 D:\xampp\htdocs\wp\travinhien\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\content-single-product.php(44): do_action('woocommerce_bef...')
+#6 D:\xampp\htdocs\wp\travinhien\wp-includes\template.php(772): require('D:\\xampp\\htdocs...')
+#7 D:\xampp\htdocs\wp\travinhien\w in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\woocommerce\single-product\product-image.php on line 55
+
+2022-03-20T14:52:54+00:00 CRITICAL syntax error, unexpected ''$weight_unit;' (T_ENCAPSED_AND_WHITESPACE) in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\inc\woocommerce.php on line 359
+
+2022-03-20T14:53:04+00:00 CRITICAL Uncaught Error: Call to a member function get_weight() on null in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\inc\woocommerce.php:359
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): customizing_woocommerce_description('<h3>C\xC3\xB4ng d\xE1\xBB\xA5n...')
+#1 D:\xampp\htdocs\wp\travinhien\wp-includes\plugin.php(189): WP_Hook->apply_filters('<h3>C\xC3\xB4ng d\xE1\xBB\xA5n...', Array)
+#2 D:\xampp\htdocs\wp\travinhien\wp-includes\post-template.php(253): apply_filters('the_content', '<h3>C\xC3\xB4ng d\xE1\xBB\xA5n...')
+#3 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\templates\single-product\tabs\description.php(30): the_content()
+#4 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1811): wc_get_template('single-product/...')
+#6 D:\xampp\htdocs\wp\travinhien\wp-content\themes in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\inc\woocommerce.php on line 359
+
+2022-03-20T14:53:12+00:00 CRITICAL Uncaught Error: Call to a member function get_weight() on null in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\inc\woocommerce.php:359
+Stack trace:
+#0 D:\xampp\htdocs\wp\travinhien\wp-includes\class-wp-hook.php(307): customizing_woocommerce_description('<h3>C\xC3\xB4ng d\xE1\xBB\xA5n...')
+#1 D:\xampp\htdocs\wp\travinhien\wp-includes\plugin.php(189): WP_Hook->apply_filters('<h3>C\xC3\xB4ng d\xE1\xBB\xA5n...', Array)
+#2 D:\xampp\htdocs\wp\travinhien\wp-includes\post-template.php(253): apply_filters('the_content', '<h3>C\xC3\xB4ng d\xE1\xBB\xA5n...')
+#3 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\templates\single-product\tabs\description.php(30): the_content()
+#4 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\wp\travinhien\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1811): wc_get_template('single-product/...')
+#6 D:\xampp\htdocs\wp\travinhien\wp-content\themes in D:\xampp\htdocs\wp\travinhien\wp-content\themes\travinhien\inc\woocommerce.php on line 359
+

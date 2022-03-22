@@ -53,7 +53,7 @@
       position: relative;
       color: #966a29;
       font-size: 16px;
-      font-family: "latomedium", sans-serif;
+      // font-family: "latomedium", sans-serif;
       line-height: 1.5;
       padding-left: 17px;
       @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -97,6 +97,9 @@
       border-radius: 50%;
       margin-left: 16px;
       transition: all 0.5s;
+      &:hover{
+        background-color: #22a19c;
+      }
       @media only screen and (max-width: 991px) and (min-width: 768px) {
         width: 24px;
         height: 24px;
@@ -139,14 +142,14 @@
 .single-product{
   &__meta{
     .entry-title{
-      font-family: 'latomedium';
+      // font-family: 'latomedium';
       font-weight: 600;
-      font-size: 40px;
+      font-size: 36px;
       color: #29432D;
       margin-bottom: 15px;
     }
     .el__sub{
-      font-family: 'latoitalic';
+      // font-family: 'latoitalic';
       font-weight: 500;
       font-size: 18px;
       line-height: 28px;

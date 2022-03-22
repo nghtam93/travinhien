@@ -1,0 +1,54 @@
+.wpcf7-spinner {
+	position: absolute;
+    top: 12px;
+    right: 12px;
+    margin: 0;
+}
+
+.about__thumb{
+	.dnfix__thumb{
+		padding-top: 90%
+	}
+}
+.contact__form{
+	padding: 48px 24px 36px;
+	background: rgba(242, 227, 206, .5);
+	border-radius: 8px;
+	margin-bottom: 30px;
+	.el__header{
+		margin-bottom: 32px;
+	}
+	.el__title{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		color: #966A29;
+		margin-bottom: 8px;
+	}
+	.el__excerpt{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 32px;
+		color: #AF8B56;
+	}
+	.form-control {
+	    border-radius: 8px;
+	}
+	textarea{
+	    padding: 16px 24px;
+	}
+	input[type="submit"]{
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		color: #FFFFFF;
+		background: #2A6433;
+		border-color: #2A6433;
+	}
+	@media (max-width:1199px){
+		.el__excerpt {
+		    font-size: 14px;
+		    line-height: 24px;
+		}
+	}
+}
